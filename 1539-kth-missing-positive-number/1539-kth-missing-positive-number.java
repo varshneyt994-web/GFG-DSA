@@ -5,15 +5,13 @@ class Solution {
          while(lo<=hi){
             int mid=lo+(hi-lo)/2;
             int missing=arr[mid]-(mid+1);
-            
-            if (missing < k)
-                lo = mid + 1;
+            if(missing<k)
+            lo=mid+1;
             else
-                hi = mid - 1;
-        }
-    
-        return lo + k; 
-                
+            hi=mid-1;
+
+         }
+          return lo+k;
         
     }
 }
